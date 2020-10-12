@@ -15,8 +15,9 @@
         android:inputType="textEmailAddress"
         android:hint="@string/email"
         android:layout_marginTop="150dp"
-        android:padding="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/email_image"
+        android:drawablePadding="10dp"/>
 
     <EditText
         android:id="@+id/new_password"
@@ -25,9 +26,10 @@
         android:inputType="textPassword"
         android:hint="@string/password"
         android:layout_marginTop="30dp"
-        android:padding="10dp"
         android:layout_below="@id/new_email"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/password_image"
+        android:drawablePadding="10dp"/>
 
     <Button
         android:id="@+id/register_btn"

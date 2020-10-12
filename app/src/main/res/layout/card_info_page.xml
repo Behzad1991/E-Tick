@@ -15,7 +15,7 @@
   <Button
       android:id="@+id/save_card_details_btn"
       android:layout_width="match_parent"
-      android:background="@color/yellowLogo"
+      android:background="@color/colorPrimary"
       android:textSize="18sp"
       android:layout_height="50dp"
       android:layout_centerHorizontal="true"

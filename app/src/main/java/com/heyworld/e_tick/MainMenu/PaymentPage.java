@@ -93,7 +93,7 @@ public class PaymentPage extends AppCompatActivity {
             public void onClick (View view){
                 String data = QRValue.getText ().toString ();
 
-                QRGEncoder qrgEncoder = new QRGEncoder (data, null, QRGContents.Type.TEXT, 500);
+                QRGEncoder qrgEncoder = new QRGEncoder (data, null, QRGContents.Type.TEXT, 1000);
 
                 if(data.isEmpty ()){
                     QRValue.setError ("Please enter your details");

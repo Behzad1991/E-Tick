@@ -26,5 +26,5 @@
         android:text="@string/reset_password"
         android:layout_marginTop="30dp"
         android:textSize="20sp"
-        android:background="@color/yellowLogo"/>
+        android:background="@color/colorPrimary"/>
 </LinearLayout>
