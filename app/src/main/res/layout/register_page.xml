@@ -31,11 +31,23 @@
         android:drawableStart="@drawable/password_image"
         android:drawablePadding="10dp"/>
 
+    <EditText
+        android:id="@+id/new_dob"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="date"
+        android:hint="@string/date_of_birth"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/new_password"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/calendar_image"
+        android:drawablePadding="10dp"/>
+
     <Button
         android:id="@+id/register_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@id/new_password"
+        android:layout_below="@id/new_dob"
         android:layout_marginTop="50dp"
         android:text="@string/register"
         android:textAllCaps="false"

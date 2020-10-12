@@ -15,4 +15,5 @@
     <string name="card_details">Card details</string>
     <string name="date_of_birth_how_many_people_will_use_it">Date of birth + how many people will use it</string>
     <string name="generate_code">Generate code</string>
+    <string name="date_of_birth">Date of birth</string>
 </resources>
