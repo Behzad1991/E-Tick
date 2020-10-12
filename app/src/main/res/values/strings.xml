@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">E-Tick</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_an_account">Create an account?</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="register">Register</string>
+    <string name="sign_out">Sign out</string>
+    <string name="update_password">Update password</string>
+    <string name="registered_email">Registered email</string>
+    <string name="reset_password">Reset password</string>
+    <string name="save">Save</string>
+    <string name="card_details">Card details</string>
+    <string name="date_of_birth_how_many_people_will_use_it">Date of birth + how many people will use it</string>
+    <string name="generate_code">Generate code</string>
+</resources>

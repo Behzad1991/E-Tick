@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu.PaymentPage"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_gravity="center">
+
+    <EditText
+        android:id="@+id/new_code_generator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/date_of_birth_how_many_people_will_use_it"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/code_generator_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/generate_code"
+        android:background="@color/yellowLogo"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/qr_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

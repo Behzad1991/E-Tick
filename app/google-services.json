@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "317201053199",
+    "firebase_url": "https://e-tck-project-august-2020.firebaseio.com",
+    "project_id": "e-tck-project-august-2020",
+    "storage_bucket": "e-tck-project-august-2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317201053199:android:a87a24f52ada8e01c2157a",
+        "android_client_info": {
+          "package_name": "com.heyworld.e_tick"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "317201053199-c781o9hiive7tcdb9p710djtjcailsvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhhWQ9qwc9SGKgT9HY9Eh2ZDZcl1dvgk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "317201053199-c781o9hiive7tcdb9p710djtjcailsvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
