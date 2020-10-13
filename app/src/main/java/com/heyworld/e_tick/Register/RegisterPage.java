@@ -27,9 +27,9 @@ public class RegisterPage extends AppCompatActivity {
     private static final String TAG = "RegisterPage";
 
     //Vars
-    private EditText newEmail, newPwd;
+    private EditText newEmail, newPwd, newDob;
     private Button registerBtn, alreadyHaveAccountBtn;
-    private String sEmail, sPassword, reg_email, reg_password;
+    private String sEmail, sPassword, sDob, reg_email, reg_password;
 
     //Firebase
     private FirebaseAuth firebaseAuth;
@@ -50,10 +50,11 @@ public class RegisterPage extends AppCompatActivity {
 
     //Assign the vars to their IDs
     private void assignVars(){
-        Log.d (TAG, "assignVars: assgin vars in reg page");
+        Log.d (TAG, "assignVars: assign vars in reg page");
 
         newEmail = findViewById (R.id.new_email);
         newPwd = findViewById (R.id.new_password);
+        newDob = findViewById (R.id.new_dob);
         registerBtn = findViewById (R.id.register_btn);
         alreadyHaveAccountBtn = findViewById (R.id.already_have_account_btn);
         alreadyHaveAccountBtn.setOnClickListener (new View.OnClickListener () {
@@ -73,8 +74,9 @@ public class RegisterPage extends AppCompatActivity {
 
         sEmail = newEmail.getText ().toString ();
         sPassword = newPwd.getText ().toString ();
+        sDob = newDob.getText ().toString ();
 
-        if(sEmail.isEmpty () || sPassword.isEmpty ()){
+        if(sEmail.isEmpty () || sPassword.isEmpty () || sDob.isEmpty ()){
             Toast.makeText (this, "Fields cannot be empty!", Toast.LENGTH_SHORT).show ();
         }else{
             result = true;
@@ -146,7 +148,7 @@ public class RegisterPage extends AppCompatActivity {
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance ();
         DatabaseReference databaseReference = firebaseDatabase.getReference (firebaseAuth.getUid ());
 
-        ConstructorProfile constructorProfile = new ConstructorProfile (sEmail);
+        ConstructorProfile constructorProfile = new ConstructorProfile (sEmail, sDob);
 
         databaseReference.setValue (constructorProfile);
     }
